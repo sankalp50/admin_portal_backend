@@ -5,7 +5,7 @@ const express		=require("express"),
       mongoose		=require("mongoose");
 
 //APP CONGFIG
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {useNewUrlParser: true ,useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/admin_portal', {useNewUrlParser: true ,useUnifiedTopology: true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
