@@ -33,7 +33,7 @@ app.get("/workers",function(req,res)
 	//Get workers from DB
 	Worker.find({},function(err,allWorkers)
 				   {
-		res.render("workers",{campgrounds:allWorkers});
+		res.render("workers",{workers:allWorkers});
 	});
 });
 
